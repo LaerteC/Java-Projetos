@@ -20,20 +20,39 @@ public class WrappersTeste {
         double doublePrimitivo=12D;
         char charPrimitivo='A';
         boolean booleanoPrimitivo;
+        
+        // Auto Boxing = Colocar um tipo primitivo dentro de uma caixa . No caso um Wrapper !
             
         Byte byteWrapper=1;
         Short shortWrapper=2;
-        Integer inteirorapper=3;
+        Integer inteirorapper= new Integer(10);
         Long longWrapper=12L;
-        Float floatWrapper=13F;
+        Float floatWrapper= new Float("15");
         Double doubleWrapper=15D;
-        Character charWrapper='B';
-        Boolean booleanoWrapper=true;
+        Character charWrapper= new Character('B');
+        Boolean booleanoWrapper=new Boolean("Laerte Souza");
         
+        System.out.println(charWrapper);
+        System.out.println(booleanoWrapper);
         
+        System.out.println(inteirorapper);
+       // Un boxing = Quando um tipo primitivo recebe uma variavel Wrapper ;
+        int i=inteirorapper;
         
+        String valor="155";
+        Float f=Float.parseFloat(valor);
+        System.out.println(f);
         
+        Long longNumero=Long.valueOf("12");
+        System.out.println(longNumero);
         
+        Character.isDigit('A');
+        
+        // Perfeito se acaso eu quero verificar se isso é um Dígito.
+        char num='2';
+        System.out.println(Character.isDigit(num));
+        System.out.println(Character.isLetter('a'));
+        System.out.println(Character.isLetterOrDigit('6'));
     }
     
 }
